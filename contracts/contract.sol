@@ -7,7 +7,6 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 
 
 /**
- * @title VSELF SBT collection smart contract
  * @notice This contract is intended to create & claim SBT collections.
  */
 contract VSelfEvents is ERC721URIStorage {
