@@ -1,6 +1,7 @@
 import React from "react";
 import WorldIDWidget from "../components/WorldIDWidget";
 import Link from "next/link";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
 
 interface HeaderProps {
   showWidget: boolean;
@@ -22,9 +23,9 @@ const Header: React.FC<HeaderProps> = ({ showWidget }) => {
           </Link>
         </div>
         <div className="flex items-center space-x-4">
-          <button className="py-2 px-4 bg-blue-500 hover:bg-blue-700 rounded">
-            Connect Wallet
-          </button>
+          {/* <button className="py-2 px-4 bg-blue-500 hover:bg-blue-700 rounded"> */}
+          <ConnectButton />
+          {/* </button> */}
           {showWidget && <WorldIDWidget />}
         </div>
       </nav>

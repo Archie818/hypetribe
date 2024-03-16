@@ -17,7 +17,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
+    <div className="bg-blue-400">
       <Head>
         <title>Hypetribe</title>
         <link rel="icon" href="/favicon.ico" />
