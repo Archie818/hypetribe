@@ -31,7 +31,7 @@ const Button: React.FC<SimpleButtonProps> = ({
 
 export function Campaign() {
   return (
-    <div className="grid md:grid-cols-2 gap-10 mt-36 ml-36">
+    <div className="grid md:grid-cols-2 gap-10 mt-36 ml-36 ">
       <div className="flex flex-col gap-10">
         <div className="space-y-2">
           <h1 className="text-3xl font-bold">Make it Shine Campaign</h1>
