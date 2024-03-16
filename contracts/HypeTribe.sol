@@ -1,17 +1,16 @@
 //Contract based on [https://docs.openzeppelin.com/contracts/3.x/erc721](https://docs.openzeppelin.com/contracts/3.x/erc721)
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.19;
+pragma solidity ^0.8.20;
+
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
-import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 
 
 /**
  * @notice This contract is intended to create & claim SBT collections.
  */
-contract VSelfEvents is ERC721URIStorage {
-    using Counters for Counters.Counter;
-    Counters.Counter private _tokenIds;
+contract HypeTribe is ERC721URIStorage {
+    uint256 private _tokenIds;
 
     event StartEvent(address userAddress, uint256 eventId);
     event StopEvent(address userAddress, uint256 eventId);
@@ -87,21 +86,16 @@ contract VSelfEvents is ERC721URIStorage {
      * @notice Constructor
      * @dev collectionName and collectionName must be set
      */
-    constructor() ERC721(collectionName, collectionSymbol) {}
+    constructor() ERC721("EventX", "HypeTribe") {
+        _tokenIds = 0;
+    }
 
-    /**
-     * @notice Mint an NFT according to recipient address and token uri
-     * @param _recipient: recipient address
-     * @param _tokenURI: token uri
-     * @dev Callable internally
-     */
     function _mintNFT(
         address _recipient,
         string memory _tokenURI
     ) internal returns (uint256) {
-        _tokenIds.increment();
-
-        uint256 newItemId = _tokenIds.current();
+       _tokenIds += 1; // Increment the ID for each new NFT
+        uint256 newItemId = _tokenIds;
 
         _mint(_recipient, newItemId);
         _setTokenURI(newItemId, _tokenURI);
@@ -114,16 +108,6 @@ contract VSelfEvents is ERC721URIStorage {
  * Overrides the standard _beforeTokenTransfer method to enforce non-transferability.
  */
 
-
-    /**
-     * @notice Start a new event
-     * @param _eventName: name of the event
-     * @param _eventDescription: description of the event
-     * @param _startTime: the first time avaialble to claim reward
-     * @param _finishTime: the end time avaialble to claim reward
-     * @param _quest: the data for NFT reward
-     * @dev Callable by users
-     */
     function startEvent(
         string memory _eventName,
         string memory _eventDescription,
@@ -165,12 +149,6 @@ contract VSelfEvents is ERC721URIStorage {
         emit StartEvent(msg.sender, eventId);
     }
 
-    /**
-     * @notice claim rewards according to eventId
-     * @param _eventId: nonce of the event
-     * @param _recipient: recipient address
-     * @dev Callable by users
-     */
     function checkin(uint56 _eventId, address _recipient) external {
         require(
             !_hasUserClaimedRewards[_eventId][_recipient],
@@ -215,11 +193,7 @@ contract VSelfEvents is ERC721URIStorage {
         emit Checkin(_recipient, _eventId);
     }
 
-    /**
-     * @notice Stop a specific event according to eventId
-     * @param _eventId: nonce of the event
-     * @dev Callable by an event owner
-     */
+
     function stopEvent(uint256 _eventId) external {
         require(_isEventIdExist[_eventId], "Not exist event id");
 
@@ -238,12 +212,7 @@ contract VSelfEvents is ERC721URIStorage {
         emit StopEvent(msg.sender, _eventId);
     }
 
-    /**
-     * @notice Retrieve all ongoing event data
-     * @param _fromIndex: the first index of event data to be retrieved
-     * @param _limit: number of event data to be retrieved
-     * @dev Callable by users
-     */
+
     function getOngoingEventDatas(
         uint256 _fromIndex,
         uint256 _limit
@@ -268,12 +237,7 @@ contract VSelfEvents is ERC721URIStorage {
         return validEventDatas;
     }
 
-    /**
-     * @notice Retrieve ongoing events
-     * @param _fromIndex: the first index of events to be retrieved
-     * @param _limit: number of events to be retrieved
-     * @dev Callable by users
-     */
+
     function getOngoingEvents(
         uint256 _fromIndex,
         uint256 _limit
@@ -334,13 +298,7 @@ contract VSelfEvents is ERC721URIStorage {
         return eventData;
     }
 
-    /**
-     * @notice Retrieve event actions according to given event id
-     * @param _eventId: nonce of the event
-     * @param _fromIndex: the first index of events to be retrieved
-     * @param _limit: number of events to be retrieved
-     * @dev Callable by users
-     */
+
     function getEventActions(
         uint256 _eventId,
         uint256 _fromIndex,
@@ -362,10 +320,7 @@ contract VSelfEvents is ERC721URIStorage {
         return eventActions;
     }
 
-    /**
-     * @notice Get current block timestamp
-     * @dev Callable by users
-     */
+
     function getCurrentTimestamp() external view returns (uint256) {
         return block.timestamp;
     }
