@@ -31,7 +31,7 @@ const Button: React.FC<SimpleButtonProps> = ({
 
 export function Campaign() {
   return (
-    <div className="grid md:grid-cols-2 gap-10 mt-36 ml-36">
+    <div className="grid md:grid-cols-2 gap-10 mt-36 ml-36 ">
       <div className="flex flex-col gap-10">
         <div className="space-y-2">
           <h1 className="text-3xl font-bold">Make it Shine Campaign</h1>
@@ -46,17 +46,17 @@ export function Campaign() {
               <p>
                 Shiomi Beauty is on the hunt for passionate content creators to
                 join our latest campaign, designed to showcase the
-                transformative power of our skincare line. We're inviting you to
-                dive deep into the essence of beauty and wellness, crafting
-                authentic and engaging stories that resonate with audiences on
-                Instagram and TikTok.
+                transformative power of our skincare line. We&apos;re inviting
+                you to dive deep into the essence of beauty and wellness,
+                crafting authentic and engaging stories that resonate with
+                audiences on Instagram and TikTok.
               </p>
 
               <p>
                 Your mission, should you choose to accept it, involves creating
                 a series of captivating posts and videos that highlight your
-                personal skincare journey using Shiomi Beauty's products. We're
-                looking for creators who can:
+                personal skincare journey using Shiomi Beauty&apos;s products.
+                We&apos;re looking for creators who can:
               </p>
 
               <ul>
@@ -84,12 +84,12 @@ export function Campaign() {
 
               <p>
                 Each piece of content should be tagged with #ShiomiGlow,
-                inviting your audience to explore and engage with our brand's
-                vision of accessible, effective skincare. In return for your
-                creativity and passion, selected creators will receive an
-                exclusive Shiomi Beauty care package, competitive compensation,
-                and the chance to be featured on our official social media
-                channels.
+                inviting your audience to explore and engage with our
+                brand&apos;s vision of accessible, effective skincare. In return
+                for your creativity and passion, selected creators will receive
+                an exclusive Shiomi Beauty care package, competitive
+                compensation, and the chance to be featured on our official
+                social media channels.
               </p>
 
               <p>
@@ -110,14 +110,16 @@ export function Campaign() {
         </div>
 
         <div className="flex items-center justify-end space-x-4">
-          <Button>Join Data Union</Button>
-          <Link href="/createNFT" passHref>
+          <Link href="/dataunion" passHref>
+            <Button>Join Data Union</Button>
+          </Link>{" "}
+          <Link href="/creater" passHref>
             <Button>Join Creators Studio</Button>
           </Link>
         </div>
       </div>
-      <div className="grid grid-cols-1 gap-4">
-        <div className="border border-gray-200 rounded-lg">
+      <div className="grid grid-cols-1 gap-4 pr-10">
+        <div className="border border-gray-200 rounded-xl">
           <img
             alt="Image"
             className="rounded-t-lg"
@@ -126,7 +128,7 @@ export function Campaign() {
             style={{
               objectFit: "cover",
             }}
-            width={500}
+            width={700}
           />
         </div>
         <div className="grid grid-cols-1 gap-4">
