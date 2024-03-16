@@ -6,8 +6,6 @@ const WorldIDWidget = () => {
 
   // Calls your implemented server route
   const verifyProof = async (proof: any) => {
-    // Call your server API route to verify the proof.
-    // Example: '/api/verify-proof'
     const response = await fetch("/api/verify", {
       method: "POST",
       headers: {
