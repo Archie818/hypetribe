@@ -18,8 +18,8 @@ const Header: React.FC<HeaderProps> = ({ showWidget }) => {
           <Link href="/latest" className="hover:underline">
             Latest
           </Link>
-          <Link href="/explore" className="hover:underline">
-            Explore
+          <Link href="/creater" className="hover:underline">
+            Create
           </Link>
         </div>
         <div className="flex items-center space-x-4">

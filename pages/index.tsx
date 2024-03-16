@@ -6,7 +6,6 @@ import Header from "../components/Header";
 import CampaignCard from "../components/CampaignCard";
 import Footer from "../components/Footer";
 import WorldIDWidget from "../components/WorldIDWidget";
-// import { campaigns } from "../data/campaigns";
 import { campaigns } from "../data/campaigns";
 
 export default function Home() {
