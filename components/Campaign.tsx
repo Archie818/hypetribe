@@ -110,8 +110,10 @@ export function Campaign() {
         </div>
 
         <div className="flex items-center justify-end space-x-4">
-          <Button>Join Data Union</Button>
-          <Link href="/createNFT" passHref>
+          <Link href="/dataunion" passHref>
+            <Button>Join Data Union</Button>
+          </Link>{" "}
+          <Link href="/creater" passHref>
             <Button>Join Creators Studio</Button>
           </Link>
         </div>
