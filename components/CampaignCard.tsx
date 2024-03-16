@@ -21,10 +21,12 @@ const CampaignCard: React.FC<CampaignProps> = ({
       <p className="text-gray-700 text-base">{description}</p>
     </div>
     <div className="px-6 pt-4 pb-2">
-      <Link href={link} passHref>
-        {/* <a className="inline-block bg-blue-500 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2 transition duration-300 ease-in-out hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-50"> */}
+      <Link
+        href={link}
+        className="inline-block bg-blue-500 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2 transition duration-300 ease-in-out hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-50"
+        passHref
+      >
         Learn More
-        {/* </a> */}
       </Link>
     </div>
   </div>

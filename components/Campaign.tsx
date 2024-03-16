@@ -116,8 +116,8 @@ export function Campaign() {
           </Link>
         </div>
       </div>
-      <div className="grid grid-cols-1 gap-4">
-        <div className="border border-gray-200 rounded-lg">
+      <div className="grid grid-cols-1 gap-4 pr-10">
+        <div className="border border-gray-200 rounded-xl">
           <img
             alt="Image"
             className="rounded-t-lg"
@@ -126,7 +126,7 @@ export function Campaign() {
             style={{
               objectFit: "cover",
             }}
-            width={500}
+            width={700}
           />
         </div>
         <div className="grid grid-cols-1 gap-4">
