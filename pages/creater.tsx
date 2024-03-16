@@ -4,8 +4,6 @@ import Header from "../components/Header";
 import React, { useRef, useEffect, useState } from "react";
 
 export default function Creater() {
-  const [showWidget, setShowWidget] = useState(false);
-
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
@@ -21,16 +19,13 @@ export default function Creater() {
     }
   };
 
-  useEffect(() => {
-    setShowWidget(true);
-  }, []);
   return (
     <div className="bg-gradient-to-br from-red-600 to-purple-800 text-gray-200 min-h-screen">
       <Head>
         <title>Hypetribe</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header showWidget={showWidget} />
+      <Header />
       <main className="p-8 grid grid-cols-2 gap-8">
         <div className="flex flex-col items-center">
           <div className="w-full max-w-lg bg-gray-200 rounded-lg p-6 shadow-md">
