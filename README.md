@@ -53,6 +53,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
   -Smart contracts:
   1) Bulk reward distribution based on activity and success 0x54555bc93926bD8EAF7cECE69542107B351A8550
   2) NFT minting using user input 0xb90fbA8CE772e896150d5d12E445bdDc301805641
+  -Circle (USDC payments) for more user-friendly system for small monetary rewards
 - Digital Identity Verification (Worldcoin, IDKit): Implements Worldcoin's identity verification system to build a trustworthy community of verified human artists and collectors, enhancing platform security and integrity.
 - Decentralized Profiles and Social Graph (Lens):  user-friendly, human-readable blockchain addresses for artist profiles, improving platform navigability and collaboration. 
 - Decentralized Storage (IPFS/Filecoin):
