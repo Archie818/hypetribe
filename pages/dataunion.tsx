@@ -3,6 +3,10 @@ import Head from "next/head";
 import Header from "../components/Header";
 import React, { useRef, useEffect, useState } from "react";
 
+import * as dotenv from "dotenv";
+dotenv.config();
+import lighthouse from "@lighthouse-web3/sdk";
+
 export default function DataUnion() {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -15,7 +19,24 @@ export default function DataUnion() {
 
   const handleUploadButtonClick = () => {
     if (fileInputRef.current !== null) {
-      fileInputRef.current.click();
+      uploadFile(fileInputRef.current.click(););
+    }
+  };
+
+  // This function now accepts a 'filePath' argument
+  const uploadFile = async (filePath) => {
+    const apiKey = process.env.LIGHTHOUSE_API_KEY;
+    // Ensure you've securely stored your API key in the .env file
+
+    try {
+      const response = await lighthouse.upload(filePath, apiKey);
+      console.log(response);
+      console.log(
+        "Visit at: https://gateway.lighthouse.storage/ipfs/" +
+          response.data.Hash
+      );
+    } catch (error) {
+      console.error("Upload failed:", error);
     }
   };
 

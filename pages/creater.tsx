@@ -9,9 +9,28 @@ export default function Creater() {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleImageChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files.length > 0) {
-      setSelectedImage(URL.createObjectURL(e.target.files[0]));
+      const file = e.target.files[0];
+
+      // Prepare the file to be sent in a FormData object
+      const formData = new FormData();
+      formData.append("file", file);
+
+      // Use fetch to send the file to your API route
+      try {
+        const response = await fetch("/api/upload", {
+          method: "POST",
+          body: formData,
+        });
+        const data = await response.json();
+        console.log(data); // Log or handle the response from your API
+
+        // Optionally, update the UI to indicate the file is uploaded
+        // setSelectedImage(URL.createObjectURL(file));
+      } catch (error) {
+        console.error("Error uploading the file:", error);
+      }
     }
   };
 
@@ -52,6 +71,15 @@ export default function Creater() {
                 Upload File
               </button>
             </div>
+            {selectedImage && (
+              <div className="h-48 bg-gray-300 rounded-lg overflow-hidden">
+                <img
+                  src={selectedImage}
+                  alt="Preview"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+            )}
           </div>
         </div>
         <div className="flex flex-col items-center">
