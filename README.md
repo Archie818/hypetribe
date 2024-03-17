@@ -31,8 +31,7 @@ See repo for Filecoin details : [https://github.com/mrpejker/HypetribeDataDAO/bl
 ![image](https://github.com/Archie818/hypetribe/assets/8280427/8837bb29-37e4-4497-8581-f10f14adf55b)
 
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
+# Development
 ## Getting Started
 ```bash
 npm run dev
@@ -76,4 +75,8 @@ Test repo with intermediate results https://github.com/mrpejker/hypetribe_tests
 <img width="1425" alt="Screenshot 2024-03-16 at 16 47 03" src="https://github.com/Archie818/hypetribe/assets/8280427/7cf552f7-977e-4b92-add7-5882baca2865">
 <img width="1330" alt="Screenshot 2024-03-17 at 00 40 30" src="https://github.com/Archie818/hypetribe/assets/8280427/5b82a9f3-ede1-4844-aef3-01e5153264e1">
 
+# Future work
+- Integration of AI mini-apps to facilitate content creation
+- Development of the performance-based reward system
+- Integration of the social graph and design of the recommendation system
 
