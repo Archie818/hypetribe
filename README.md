@@ -41,9 +41,18 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Techstack
 
 - Next.js, T3 app
-- 
+- Blockchain for Transactions (Arbitrum): Uses Arbitrum's efficient and low-cost transaction capabilities to facilitate easy minting, buying, and selling of NFTs, ensuring creators can focus on art without worrying about high fees.
+- Digital Identity Verification (Worldcoin, IDKit): Implements Worldcoin's identity verification system to build a trustworthy community of verified human artists and collectors, enhancing platform security and integrity.
+- Decentralized Profiles and Social Graph (Lens):  user-friendly, human-readable blockchain addresses for artist profiles, improving platform navigability and collaboration. 
+- Decentralized Storage (IPFS/Filecoin):
+    - NFT.Storage for IP-defended final content images
+    - Data DAO on Filecoin for training data market
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Notable Implementation: 
+One innovative aspect of HypeTribe is its use of smart contracts for transparent and automatic retroactive royalty distribution. This feature ensures that artists and creators receive their due royalties seamlessly from secondary sales, showcasing the platform's commitment to fair compensation for creators.
+
+HypeTribe reimagines the digital art world as a more inclusive, secure, and collaborative space. It's not just a platform but a movement toward democratizing digital art creation and ownership, inviting artists and creators to join a vibrant, global community where art meets technology for mutual empowerment.
+
 
 ## Deployed on Vercel
 
