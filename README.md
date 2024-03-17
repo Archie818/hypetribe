@@ -15,7 +15,7 @@ HypeTribe is designed as a transformative ecosystem for digital content, leverag
 
 
 
-# Data DAO for creators & mirco-influencers to monetize raw data for AI training
+## Data DAO for creators & mirco-influencers to monetize raw data for AI training
 
 
 See repo for Filecoin details : [https://github.com/mrpejker/HypetribeDataDAO/blob/main/README.md
@@ -49,17 +49,18 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Techstack
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Next.js, T3 app
+- 
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deployed on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Find the prototype here:  https://hypetribe.vercel.app/
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<img width="1425" alt="Screenshot 2024-03-16 at 16 47 03" src="https://github.com/Archie818/hypetribe/assets/8280427/7cf552f7-977e-4b92-add7-5882baca2865">
+<img width="1425" alt="Screenshot 2024-03-16 at 16 47 13" src="https://github.com/Archie818/hypetribe/assets/8280427/34b572d1-3c4f-44eb-b404-75d2fbad746b">
+
+
