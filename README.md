@@ -57,6 +57,7 @@ HypeTribe reimagines the digital art world as a more inclusive, secure, and coll
 ## Deployed on Vercel
 
 Find the prototype here:  https://hypetribe.vercel.app/
+
 Test repo with intermediate results https://github.com/mrpejker/hypetribe_tests
 
 <img width="1425" alt="Screenshot 2024-03-16 at 16 47 03" src="https://github.com/Archie818/hypetribe/assets/8280427/7cf552f7-977e-4b92-add7-5882baca2865">
