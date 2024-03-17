@@ -22,6 +22,7 @@ Data DAOs emerge as a groundbreaking monetisation model, especially within the r
 See repo for Filecoin details : [https://github.com/mrpejker/HypetribeDataDAO/blob/main/README.md
 ](https://github.com/mrpejker/HypetribeDataDAO)
 
+![image](https://github.com/Archie818/hypetribe/assets/8280427/8837bb29-37e4-4497-8581-f10f14adf55b)
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
