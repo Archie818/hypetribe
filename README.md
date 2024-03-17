@@ -19,6 +19,12 @@ HypeTribe is designed as a transformative ecosystem for digital content, leverag
 
 Data DAOs emerge as a groundbreaking monetisation model, especially within the realms of influencers and user-generated content (UGC). It allows the community of content creators, influencers, and brands fans to manage, curate, and monetize datasets of raw data in a way that is fair, transparent, and directly beneficial to all stakeholders involved. This innovative approach fosters a more sustainable ecosystem for content creation and distribution, empowering creators and providing brands with access to rich, diverse datasets tailored for AI-driven analytics and personalized marketing strategies.
 
+Smart contracts deployed on Calibration testnet
+- DAO Deal address: "0xE28303aB1DDfAA05caad98f0197A20ebB82BF4d7",
+- Governor Contract address: "0xA38282f67527F9e10262F7F9A85ec83d17219900",
+- HypeTribeTKN address: "0xD596081aBa4D708AD1182911834764B72fc80195",
+- TimeLock address: "0x741452c631B718074fC2B1398EbF78cA962B2030",
+
 See repo for Filecoin details : [https://github.com/mrpejker/HypetribeDataDAO/blob/main/README.md
 ](https://github.com/mrpejker/HypetribeDataDAO)
 
