@@ -17,6 +17,7 @@ HypeTribe is designed as a transformative ecosystem for digital content, leverag
 
 ## Data DAO for creators & mirco-influencers to monetize raw data for AI training
 
+Data DAOs emerge as a groundbreaking monetisation model, especially within the realms of influencers and user-generated content (UGC). It allows the community of content creators, influencers, and brands fans to manage, curate, and monetize datasets of raw data in a way that is fair, transparent, and directly beneficial to all stakeholders involved. This innovative approach fosters a more sustainable ecosystem for content creation and distribution, empowering creators and providing brands with access to rich, diverse datasets tailored for AI-driven analytics and personalized marketing strategies.
 
 See repo for Filecoin details : [https://github.com/mrpejker/HypetribeDataDAO/blob/main/README.md
 ](https://github.com/mrpejker/HypetribeDataDAO)
