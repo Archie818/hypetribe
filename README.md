@@ -1,3 +1,15 @@
+
+
+
+
+# Data DAO for creators & mirco-influencers to monetize raw data for AI training
+
+
+See repo for Filecoin details : [https://github.com/mrpejker/HypetribeDataDAO/blob/main/README.md
+](https://github.com/mrpejker/HypetribeDataDAO)
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
